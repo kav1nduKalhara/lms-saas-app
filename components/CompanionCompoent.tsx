@@ -84,7 +84,8 @@ const CompanionCompoent = ({companionId, subject, topic, name, userName, userIma
     }
 
     const handleDisconnect = () => {
-
+    setCallStatus(CallStatus.FINISHED)
+        vapi.stop()
     }
 
     return(
